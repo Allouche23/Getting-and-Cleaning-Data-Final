@@ -1,23 +1,7 @@
 #Assignment getting and cleaning data script for performing the analysis 
 # You should be able to run this script and get the tidy dataset 
+#You should be able to run the code if you have UCI HAR Dataset/test/subject_test.txt" in your wd
 
-#Part 1 setting your working directory in this part I will create the working directory for this project
-getwd() #this identifies your current working directory 
-if(!file.exists("tidydataproject")){dir.create("tidydataproject")} #creates or working directory if it do not  exist 
-setwd("tidydataproject") #set my working directory to the directory, that i have created 
-get() #checking if I am in the correct working directory 
-
-#part 2 download the document to my working directory 
-#create a variable with the URL
-file.url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" 
-#download the file and names it zipfile
-downloader::download(file.url, destfile = "zipfile")
-#unzipfile
-unzip ("zipfile")
-# date off the download 
-datedownload <- data()
-
-#part 3 create variables with the data 
 # read the data into variables in R 
 # test 
 subjecttest <- read.table("UCI HAR Dataset/test/subject_test.txt")
